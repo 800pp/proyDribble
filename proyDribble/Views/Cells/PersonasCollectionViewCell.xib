@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonasCollectionViewCell" id="gTV-IL-0wX" customClass="PersonasCollectionViewCell" customModule="proyDribble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="random" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-Fa-GBh">
+                        <rect key="frame" x="10" y="10" width="71" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lBZ-Fa-GBh" secondAttribute="height" multiplier="1:1" id="Exm-0o-Khj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Franco Matos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17q-X4-n9f">
+                        <rect key="frame" x="161" y="38" width="100.5" height="15"/>
+                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lBZ-Fa-GBh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3ws-rK-UJN"/>
+                <constraint firstItem="17q-X4-n9f" firstAttribute="leading" secondItem="lBZ-Fa-GBh" secondAttribute="trailing" constant="80" id="5kb-b6-jAl"/>
+                <constraint firstItem="lBZ-Fa-GBh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="GAE-HE-8eE"/>
+                <constraint firstAttribute="bottom" secondItem="lBZ-Fa-GBh" secondAttribute="bottom" constant="10" id="oWh-Zl-KHz"/>
+                <constraint firstItem="17q-X4-n9f" firstAttribute="centerY" secondItem="lBZ-Fa-GBh" secondAttribute="centerY" id="sGd-57-wRe"/>
+            </constraints>
+            <size key="customSize" width="354" height="91"/>
+            <connections>
+                <outlet property="nameLabel" destination="17q-X4-n9f" id="qjZ-yH-SMr"/>
+            </connections>
+            <point key="canvasLocation" x="360.86956521739131" y="72.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="random" width="474" height="717"/>
+    </resources>
+</document>
